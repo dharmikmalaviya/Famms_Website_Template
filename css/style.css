@@ -1,0 +1,517 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap'); */
+
+/* montserrat-200 - latin */
+@font-face {
+     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 200;
+     src: url('../font/montserrat-v25-latin-200.eot'); /* IE9 Compat Modes */
+     src: url('../font/montserrat-v25-latin-200.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../font/montserrat-v25-latin-200.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../font/montserrat-v25-latin-200.woff') format('woff'), /* Modern Browsers */
+          url('../font/montserrat-v25-latin-200.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('../font/montserrat-v25-latin-200.svg#Montserrat') format('svg'); /* Legacy iOS */
+   }
+   /* montserrat-300 - latin */
+   @font-face {
+     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 300;
+     src: url('../font/montserrat-v25-latin-300.eot'); /* IE9 Compat Modes */
+     src: url('../font/montserrat-v25-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../font/montserrat-v25-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../font/montserrat-v25-latin-300.woff') format('woff'), /* Modern Browsers */
+          url('../font/montserrat-v25-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('../font/montserrat-v25-latin-300.svg#Montserrat') format('svg'); /* Legacy iOS */
+   }
+   /* montserrat-regular - latin */
+   @font-face {
+     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 400;
+     src: url('../font/montserrat-v25-latin-regular.eot'); /* IE9 Compat Modes */
+     src: url('../font/montserrat-v25-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../font/montserrat-v25-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../font/montserrat-v25-latin-regular.woff') format('woff'), /* Modern Browsers */
+          url('../font/montserrat-v25-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('../font/montserrat-v25-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+   }
+   /* montserrat-500 - latin */
+   @font-face {
+     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 500;
+     src: url('../font/montserrat-v25-latin-500.eot'); /* IE9 Compat Modes */
+     src: url('../font/montserrat-v25-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../font/montserrat-v25-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../font/montserrat-v25-latin-500.woff') format('woff'), /* Modern Browsers */
+          url('../font/montserrat-v25-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('../font/montserrat-v25-latin-500.svg#Montserrat') format('svg'); /* Legacy iOS */
+   }
+   /* montserrat-600 - latin */
+   @font-face {
+     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 600;
+     src: url('../font/montserrat-v25-latin-600.eot'); /* IE9 Compat Modes */
+     src: url('../font/montserrat-v25-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../font/montserrat-v25-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../font/montserrat-v25-latin-600.woff') format('woff'), /* Modern Browsers */
+          url('../font/montserrat-v25-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('../font/montserrat-v25-latin-600.svg#Montserrat') format('svg'); /* Legacy iOS */
+   }
+
+/* ------------------------------- Comman CSS ------------------------------- */
+body{
+     font-family: 'Montserrat', serif;
+}
+:root{
+     --liteblack: #131313;
+     --naviblue: #002C3E;
+     --pink: #FF424D;
+     --darkgray: #D4CED0;
+     --white: #fff;
+     --montfont: 'Montserrat';
+     --seriffont: serif;
+     --black: #000;
+}
+ul,li{
+     list-style: none;
+}
+a{
+     text-decoration: none;
+}
+.ptb-70{
+     padding-top: 70px;
+     padding-bottom: 70px;
+}
+.pt-70{
+     padding-top: 70px;
+}
+.pb-70{
+     padding-bottom: 70px;
+}
+/* ================================================================================================================================
+                                                       Start Header
+================================================================================================================================= */
+header{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 1111;
+     background-color: var(--white);
+}
+.fixed{
+     position: fixed;
+     top:0; 
+     left:0;
+     width: 100%; 
+     z-index: 9999;
+     background-color: #fff;
+}
+header.fixed{
+     box-shadow: 0px 0px 25px rgba(0, 0, 0, .1);
+}
+.navbar-brand img{
+     width: 250px !important;
+}
+.nav-item .dropdown-menu{
+     box-shadow: 3px 3px 2px rgba(0, 0, 0, 1.9);
+     border-radius: 0 !important;
+     border: 2px solid var(--black);
+}
+.dropdown > a,.navbar-nav > li > a,.social_icon > li > a{
+     color: var(--black);
+}
+.nav-item .nav-link.active,.nav-item > a:hover,.social_icon > li > a:hover{
+     color: var(--pink);
+}
+.dropdown-menu > li:hover > a,.dropdown-menu > li > a.active1{
+     background-color: var(--pink);
+     color: var(--white);
+}
+.navbar-toggler{
+     border: none !important;
+}
+/* ================================================================================================================================
+                                                       Start main
+================================================================================================================================= */
+/*--------------------------------------------------------- Start Banner ---------------------------------------------------------*/
+.banner_item{
+     margin-top: 220px;
+     margin-left: 170px;
+}
+.bg_banner{
+     position: relative;
+}
+.sliderr_1{
+     position: absolute;
+     top: 50px;
+}
+.banner_item .banner_t_1{
+     font-family: var(--seriffont);
+     font-weight: bolder;
+     color: var(--pink);
+     width: 34%;
+}
+.banner_item .banner_t_1>span{
+     color: var(--naviblue);
+}
+.banner_item .banner_t_2{
+     width: 40%;
+     color: var(--black);
+}
+.btn_box .btn1{
+     display: inline-block;
+     padding: 12px 45px;
+     background-color: var(--pink);
+     border: 1px solid var(--pink);
+     color: var(--white);
+     transition: .3s;
+     margin-top: 10px;
+     font-weight: 700;
+}
+.btn_box .btn1:hover,.option .option1:hover,.subscribe_form form button:hover{
+     background-color: transparent;
+     color: var(--pink);
+}
+#banner_slider.owl-carousel .owl-dots{
+     margin-top: 30px !important;
+     display: flex;
+     margin-left: 170px;
+}
+#banner_slider.owl-carousel .owl-dots .owl-dot span{
+     width: 12px !important;
+     height: 12px !important;
+     background-color: var(--white);
+     text-align: start;
+}
+#banner_slider.owl-carousel .owl-dots .owl-dot.active span{
+     width: 20px !important;
+     height: 20px !important;
+     background-color: var(--pink);
+}
+
+/*------------------------------------------------------ Start Why Shop With Us ------------------------------------------------------*/
+.why_shop h2,.newaee_h2 h2{
+     font-size: 56px;
+     color: var(--black);
+     font-family: var(--seriffont);
+     font-weight: bolder;
+}
+.why_shop h2::after{
+     content: "";
+     width: 70px;
+     height: 5px;
+     background-color: var(--pink);
+     display: block;
+     margin: 10px auto 10px;
+}
+.box{
+     margin-top: 45px;
+     background-color: var(--naviblue);
+     padding: 45px 50px;
+     border-radius: 5px;
+     color: var(--white);
+}
+.box_img img{
+     width: 55px;
+     height: auto;
+}
+
+/*------------------------------------------------------ Start NewArrivals ------------------------------------------------------*/
+.new_arr{
+     background-image: url(../image/arrival-bg.png);
+     padding: 150px 0;
+     background-size: cover;
+}
+.newaee_h2 h2{
+     color: var(--naviblue);
+}
+.newaee_h2 p{
+     width: 90%;
+}
+
+/*------------------------------------------------------ Start Our products ------------------------------------------------------*/
+.our_box .box1{
+     position: relative;
+     margin-top: 25px;
+     padding: 35px 35px;
+     background-color: #f7f8f9;
+     transition: all .3s;
+     overflow: hidden;
+     box-shadow: 5px 5px 5px -5px rgb(0 0 0 / 20%);
+     border: solid #fff 10px;
+}
+.box1 .pro_box{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: rgba(255, 255, 255, 0.6);
+     z-index: 3;
+     opacity: 0;
+     visibility: hidden;
+     transition: all .2s;
+     transform: translateY(100%);
+}
+.pro_box .option{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.option a{
+     display: inline-block;
+     padding: 8px 15px;
+     border-radius: 30px;
+     width: 165px;
+     text-align: center;
+     margin: 5px 0;
+     transition: .3s;
+}
+.option .option1{
+     background-color: var(--pink);
+     border: 1px solid var(--pink);
+     color: var(--white);
+}
+.option .option2{
+     background-color: var(--black);
+     border: 1px solid var(--black);
+     color: var(--white);
+}
+.option .option2:hover{
+     background-color: transparent;
+     color: var(--black);
+}
+.box1 .pro_img{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 215px;
+}
+.box1 .pro_img img{
+     width: 124px;
+     vertical-align: middle;
+     transition: .3s;
+}
+.pro_details h5{
+     font-size: 18px;
+     margin-top: 10px;
+     font-weight: bolder;
+}
+.pro_details h6{
+     margin-top: 10px;
+     color: var(--naviblue);
+     font-weight: 500;
+}
+.box1:hover .pro_box{
+     opacity: 1;
+     visibility: visible;
+     transform: translateY(0);
+}
+.box1:hover img{
+     transform: scale(1.1);
+}
+
+/*------------------------------------------------------ Start subscribe ------------------------------------------------------*/
+.subscribe{
+     background-color: var(--darkgray);
+}
+.box2{
+     padding: 75px 45px;
+}
+.sub_hedding h3{
+     margin-bottom: 15px;
+     color: var(--naviblue);
+     font-size: 40px;
+     font-weight: bolder;
+     font-family: var(--seriffont);
+     width: 100%;
+     position: relative;
+}
+.subscribe_form form input{
+     width: 100%;
+     height: 60px;
+     border: none;
+     border-radius: 90px;
+     outline: none;
+     padding: 5px 25px;
+     background-color: var(--white);
+     margin-top: 15px;
+     text-align: left;
+}
+.subscribe_form form button{
+     display: inline-block;
+     padding: 10px 45px;
+     background-color: var(--pink);
+     border: 1px solid var(--pink);
+     color: var(--white);
+     border-radius: 35px;
+     transition: all 0.3s;
+     text-transform: uppercase;
+     margin-top: 35px;
+     font-weight: 600;
+     width: 100%;
+     max-width: 285px;
+}
+
+/*--------------------------------------------------- Start Customer's Testimonial ---------------------------------------------------*/
+.box3_sli{
+     margin-top: 55px;
+}
+.box3 .box3_img img{
+     width: 150px;
+     height: 150px;
+     border-radius: 100px;
+}
+.box3 .box3_img{
+     display: flex;
+     justify-content: center;
+}
+.box3_text p{
+     width: 70%;
+}
+#testimonial .fa-arrow-left:before {
+     content: "\f177";
+}
+#testimonial .fa-arrow-right:before {
+     content: "\f178";
+ }
+ 
+#testimonial .owl-nav button.owl-prev,#testimonial .owl-nav button.owl-next{
+     position: absolute;
+     top: 20%;
+     left: 30%;
+     color: var(--white);
+     width: 50px;
+     height: 50px;
+     background-color: var(--pink);
+     border-radius: 50px;
+     transition: .3s;
+}
+#testimonial .owl-nav button.owl-prev:hover,#testimonial .owl-nav button.owl-next:hover{
+     background-color: var(--black);
+}
+#testimonial .owl-nav button.owl-next{
+     left: 65%;
+}
+
+/* ================================================================================================================================
+                                                       Start footer
+================================================================================================================================= */
+.footer_1{
+     background-color: #F8F8F8;
+     padding: 90px 0 70px;
+}
+.footer_logo > a img{
+     width: 210px;
+}
+.menu > ul{
+     padding: 0;
+     margin-top: 50px;
+}
+.menu > ul > li > a{
+     color: var(--black);
+     float: left;
+     width: 100%;;
+     margin-top: 5px;
+}
+.menu1 h3{
+     margin-bottom: 55px;
+}
+.field input[type="email"]{
+     padding: 10px 10px 10px 15px;
+     border-radius: 0;
+     border: 1px solid #ccc;
+     font-size: 14px;
+     box-shadow: none;
+     /* position: relative; */
+     height: 48px;
+}
+.field input[type="email"] + input[type="submit"]{
+     /* position: absolute; */
+     right: 0;
+     background-color: var(--pink);
+     color: var(--white);
+     top: 0;
+     border: none;
+     font-size: 14px;
+     height: 48px;
+     font-weight: 600;
+     padding: 0 15px;
+}
+.cpy_{
+     background-color: #222;
+}
+
+
+
+/* ================================================================================================================================
+                                                       Start About Us
+================================================================================================================================= */
+.about_section{
+     margin-top: 80px;
+     background-color: var(--pink);
+     padding: 80px 0;
+}
+.about_section h1{
+     color: var(--white);
+     font-weight: bolder;
+}
+
+/* ================================================================================================================================
+                                                       Start Contact
+================================================================================================================================= */
+form input{
+     background: #fff;
+     border: solid #ccc 1px;
+     padding: 15px 15px;
+     width: 100%;
+     font-size: 14px;
+     margin-bottom: 20px;
+     text-transform: capitalize;
+     line-height: normal;
+}
+form textarea{
+     background: #fff;
+     border: solid #ccc 1px;
+     padding: 15px 15px;
+     width: 100%;
+     min-height: 150px;
+     font-size: 14px;
+     margin-bottom: 20px;
+     text-transform: capitalize;
+     line-height: normal;
+
+
+
+
+     
+}
+form input[type="submit"]{
+     border: none;
+     padding: 15px 45px;
+     width: auto;
+     font-size: 16px;
+     text-transform: capitalize;
+     line-height: normal;
+     margin: 0 auto;
+     display: flex;
+     background: #333;
+     color: var(--white);
+     font-weight: 600;
+     transition: all .3s;
+}
+form input[type="submit"]:hover{
+     background-color: var(--pink);
+}
